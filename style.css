@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+:root {
+  --clr-white: #f5f5f5;
+  --clr-lightblue: #00ffff;
+  --clr-cinza: #272727;
+  --clr-black: #000000;
+}
+
+
+.cabecalho {
+  padding: 2% 0% 0% 10%;
+
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--clr-lightblue);
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+
+
+
+
+body {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+
+}
+
+strong {
+  color: var(--clr-lightblue);
+}
+
+.minha__imagem {
+  width: 45vh;
+  border-radius: 500px;
+}
+
+.apresentacao {
+  margin: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 36px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.botao {
+  /* background-color: var(--clr-lightblue); */
+  display: flex;
+  border: 2px solid var(--clr-lightblue);
+  border-radius: 16px;
+  width: 378px;
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 25px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.botao:hover {
+  /* background-color: var(--clr-lightblue); */
+  box-shadow: 8px 8px var(--clr-lightblue);
+  transition: .3s;
+}
+
+.rodape {
+  background-color: var(--clr-lightblue);
+  color: var(--clr-black);
+  padding: 24px;
+  width: 2160px;
+  height: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rodape_especial {
+  margin: 13% 0 0 0;
+}
+
+
